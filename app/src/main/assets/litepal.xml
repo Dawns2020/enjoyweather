@@ -1,0 +1,11 @@
+<litepal>
+    <dbname value="enjoy_weather"/>
+
+    <version value="1"/>
+    <list>
+        <mapping class="android.enjoyweather.com.enjoyweather.db.Province"/>
+        <mapping class="android.enjoyweather.com.enjoyweather.db.City"/>
+        <mapping class="android.enjoyweather.com.enjoyweather.db.County"/>
+
+    </list>
+</litepal>
