@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.enjoyweather.com.enjoyweather.gson.Forecast;
 import android.enjoyweather.com.enjoyweather.gson.Weather;
+import android.enjoyweather.com.enjoyweather.service.AutoUpdateService;
 import android.enjoyweather.com.enjoyweather.util.HttpUtil;
 import android.enjoyweather.com.enjoyweather.util.Utility;
 import android.graphics.Color;
@@ -181,8 +182,8 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
-        //Intent intent = new Intent(this, AutoUpdateService.class);
-        //startService(intent);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
     private void loadBingPic(){
         String requestBingPic = "http://guolin.tech/api/bing_pic";
